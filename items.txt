@@ -1,0 +1,17 @@
+scl/~equal_temperament.scl
+scl/pyth_12.scl
+scl/vallotti.scl
+scl/werck3.scl
+scl/carlos_alpha.scl
+scl/carlos_beta.scl
+scl/carlos_gamma.scl
+scl/carlos_harm.scl
+scl/carlos_super.scl
+scl/kurzweil_arab.scl
+scl/kurzweil_ji.scl
+scl/kurzweil_pelogh.scl
+scl/kurzweil_slen.scl
+scl/kurzweil_tibet.scl
+scl/partch_43.scl
+scl/partch-indian.scl
+scl/partch-greek.scl
