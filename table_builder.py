@@ -1,5 +1,8 @@
-#!/usr/bin/python
+# table_builder.py
+# SCALA to TELEX Converter
+# (c) 2021 bpcmusic; MIT Licensed
 
+#!/usr/bin/python
 import sys, getopt, math
 
 
@@ -12,7 +15,7 @@ def readFile(inputfile, scalenum, outputhandle, notecounter):
 
 
 	with open(inputfile) as f:
-	    for line in f:
+		for line in f:
 			line = line.strip()
 
 			# if it is a comment - skip it
@@ -88,18 +91,18 @@ def readFile(inputfile, scalenum, outputhandle, notecounter):
 argv = sys.argv[1:]
 
 try:
-  opts, args = getopt.getopt(argv,"i::",["input="])
+	opts, args = getopt.getopt(argv,"i::",["input="])
 except getopt.GetoptError:
-  print "table_builder.py -i <inputfile>"
-  sys.exit(2)
+	print("table_builder.py -i <inputfile>")
+	sys.exit(2)
 
 inputfile = ""
 
 notecounter = []
 
 for opt, arg in opts:
-  if opt in ("-i", "--ifile"):
-     inputfile = arg
+	if opt in ("-i", "--ifile"):
+		inputfile = arg
 
 if inputfile == "":
 	sys.exit(2)
@@ -112,7 +115,7 @@ freqs = []
 
 with open("scales.cpp", "w") as outputfile:
 	with open(inputfile) as list:
-	    for item in list:
+		for item in list:
 			item = item.strip()
 			readFile(item, i, outputfile, notecounter)
 			scales.append('scale' + str(i))

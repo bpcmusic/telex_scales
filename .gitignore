@@ -1,3 +1,3 @@
 depricated/
-scl/
-scales.cpp
+*.pyc
+.DS_Store
